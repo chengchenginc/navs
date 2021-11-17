@@ -164,7 +164,11 @@
         });
         $("a.smooth").click(function (ev) {
             ev.preventDefault();
-
+            var link = $(this).attr("href")
+            if (link.indexOf("http") == 0){
+                window.open(link,"_blank")
+                return false;
+            }
             public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
             ps_destroy();
             $("html, body").animate({
