@@ -5,22 +5,22 @@
     <title>Navs一站式导航</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="keywords" content="Navs一站式导航">
-     <link rel="shortcut icon" href="/static/images/favicon.png">
-    <link rel="stylesheet" href="/static/css/fonts/linecons/css/linecons.css">
-    <link rel="stylesheet" href="/static/css/fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/xenon-core.css">
-    <link rel="stylesheet" href="/static/css/xenon-components.css">
-    <link rel="stylesheet" href="/static/css/xenon-skins.css">
-    <link rel="stylesheet" href="/static/css/nav.css">
+     <link rel="shortcut icon" href=."/static/images/favicon.png">
+    <link rel="stylesheet" href="./static/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="./static/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/xenon-core.css">
+    <link rel="stylesheet" href="./static/css/xenon-components.css">
+    <link rel="stylesheet" href="./static/css/xenon-skins.css">
+    <link rel="stylesheet" href="./static/css/nav.css">
     <style type="text/css">
         .sidebar-menu {
             background: #0f222c;
         }
     </style>
-    <script src="/static/js/vue.js"></script>
+    <script src="./static/js/vue.js"></script>
     <script src="//cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
-    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="./static/js/jquery-1.11.1.min.js"></script>
     <script>
         axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
         axios.defaults.transformRequest = [function (data) {
@@ -42,10 +42,10 @@
                     <!-- logo -->
                     <div class="logo">
                         <a href="index.html" class="logo-expanded">
-                            <img src="/static/images/logo@2x.png" width="100%" alt=""/>
+                            <img src="./static/images/logo@2x.png" width="100%" alt=""/>
                         </a>
                         <a href="index.html" class="logo-collapsed">
-                            <img src="/static/images/logo-collapsed@2x.png" width="40" alt=""/>
+                            <img src="./static/images/logo-collapsed@2x.png" width="40" alt=""/>
                         </a>
                     </div>
                     <div class="mobile-menu-toggle visible-xs">
@@ -95,7 +95,7 @@
                              data-toggle="tooltip" data-placement="bottom" title="" :data-original-title="item.link" @click="openlink(item.link)">
                             <div class="xe-comment-entry">
                                 <a class="xe-user-img" >
-                                    <img :src="'../static/images/logos/'+item.logo" class="lozad img-circle" width="40">
+                                    <img :src="'./static/images/logos/'+item.logo" class="lozad img-circle" width="40">
                                 </a>
                                 <div class="xe-comment">
                                     <a class="xe-user-name overflowClip_1">
